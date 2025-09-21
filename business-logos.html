@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Logos</title>
+<!-- linked to the style sheet and node modules so the images could be seen from the bootstrap compatible homepage -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar: copy and pasted from boostrap, modified to match links on homepage -->    
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+<!-- changed title of webpage from 'document' to 'Portfolio'-->
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+<!-- changed navigation link name to 'Work Experience' and linked to work-experience html page-->
+        <li class="nav-item">
+          <a class="nav-link" href="work-experience.html">Work Experience</a>
+        </li>
+        <li class="nav-item dropdown">
+
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Creative Writing'-->
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Creative Writing</a>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Book</a></li>
+            <li><a class="dropdown-item" href="#">Short Stories</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Visual Arts'-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Visual Arts
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="business-logos.html">Business Logo</a></li>
+            <li><a class="dropdown-item" href="greeting-cards.html">Greeting Cards</a></li>
+          </ul>
+        </li>
+        <ul class="navbar-nav">
+       
+        <li class="nav-item">
+
+          <a class="nav-link" href="#">
+            Commissions
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- made the image a fluid container and copy and pasted margin and centering options form bootstrap docs -->
+    <div class="container-fluid text-center mt-5 mb-5">
+    <!-- created separate file for the image to live and linked back to it/followed thw pathway-->
+        <img src="business-logos-images/peak-iv-logo.jpg" width="300" alt="peak-iv-logo">
+    </div>
+<!-- followed a tutorial to add a hyperlink back to homepage. th hyperlink references the index.html webpage creating a pathway to go back to it.
+ made the back to homepage its own fluid container to pay around with centering and margin spaces-->
+    <div class="container-fluid text-center mt-5 mb-5">   
+        <a href="index.html"><h3>Back to homepage</h3></a>
+    </div> 
+</body>
+</html>

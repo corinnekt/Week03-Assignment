@@ -1,0 +1,117 @@
+<!-- sucessfully managed to source images from correct folder and resize
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- changed webpage title-->
+    <title>Greeting Cards</title>
+<!-- linked to the style sheet and node modules so the images could be seen from the bootstrap compatible homepage -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar: copy and pasted from boostrap, modified to match links on homepage -->    
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+<!-- changed title of webpage from 'document' to 'Portfolio'-->
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+<!-- changed navigation link name to 'Work Experience' and linked to work-experience html page-->
+        <li class="nav-item">
+          <a class="nav-link" href="work-experience.html">Work Experience</a>
+        </li>
+        <li class="nav-item dropdown">
+
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Creative Writing'-->
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Creative Writing</a>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Book</a></li>
+            <li><a class="dropdown-item" href="#">Short Stories</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Visual Arts'-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Visual Arts
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="business-logos.html">Business Logo</a></li>
+            <li><a class="dropdown-item" href="greeting-cards.html">Greeting Cards</a></li>
+          </ul>
+        </li>
+        <ul class="navbar-nav">
+       
+        <li class="nav-item">
+
+          <a class="nav-link" href="#">
+            Commissions
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Greeting card images -->
+
+    <div class="container">
+        <div class="row">
+              <div class="col-sm-6 mb-3 w-50">
+                  <div class="card">
+                    <!-- created separate file for the images to live and linked back to it/followed the pathway and made each image a card -->
+                    <img src="greeting-cards-image/courtney.jpg" width="300" alt="courtney"></img>
+                    <img src="greeting-cards-image/courtney2.jpg" width="300" alt="courtney2"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- made each image it's own container to pay with size and spacing separately, and made each image a card and cooy and pasted from Bootstrap docs to pay around with size-->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-6 mb-3 w-50">
+                  <div class="card">
+                    <img src="greeting-cards-image/anniversary.jpg" width="300" alt="anniversary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+              <div class="col-sm-6 mb-3 w-50">
+                  <div class="card" > 
+            <img src="greeting-cards-image/quinn.jpg" width="300" alt="quinn">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+              <div class="col-sm-6 mb-3 w-50">
+                  <div class="card">
+                        <img src="greeting-cards-image/jacque.jpg" width="300" alt="jacque">
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- followed a tutorial to add a hyperlink back to homepage. the hyperlink references the index.html webpage creating a pathway to go back to it.
+     It's placed in its own container to be more center on the page-->
+    <div class="container m-5 fs-3 text-center">
+    <a href="index.html"><h3>Back to homepage</h3></a>
+    </div>
+    </div>
+</body>
+</html>

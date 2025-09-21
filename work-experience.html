@@ -1,0 +1,116 @@
+<!--
+* A resume showcasing table of the company, job title, Job Duties, and dates worked
+* Utilized a html table template from W3 Schools: https://www.w3schools.com/html/html_tables.asp
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- changed webpage title-->
+    <title>Work Experience</title>
+<!-- linked this webpage to css styles and the bootstrap node server so the class components will work-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar: copy and pasted from boostrap, modified to match links on homepage -->    
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+<!-- changed title of webpage from 'document' to 'Portfolio'-->
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+
+<!-- changed navigation link name to 'Work Experience' and linked to work-experience html page-->
+        <li class="nav-item">
+          <a class="nav-link" href="work-experience.html">Work Experience</a>
+        </li>
+        <li class="nav-item dropdown">
+
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Creative Writing'-->
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Creative Writing</a>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Book</a></li>
+            <li><a class="dropdown-item" href="#">Short Stories</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+<!-- copy and pasted dropdown manu commands from original bootstrap code, changed nav link name to 'Visual Arts'-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Visual Arts
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="business-logos.html">Business Logo</a></li>
+            <li><a class="dropdown-item" href="greeting-cards.html">Greeting Cards</a></li>
+          </ul>
+        </li>
+        <ul class="navbar-nav">
+       
+        <li class="nav-item">
+
+          <a class="nav-link" href="#">
+            Commissions
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- attached bootrap tablw component to format the table -->
+    <table class="table table-striped">
+  <tabler>
+    <!-- table header puts all the data in one line-->
+    <th>Company</th>
+    <th>Job Title</th>
+    <th>Job Duties</th>
+    <th>Dates Worked</th>
+  </tr>
+   <tr>
+    <!-- table data lines up the next line of data under the corresponding table header-->
+    <td>Bannock Youth Foundation</td>
+    <td>Direct Care Staff</td>
+    <td>Supervise youth with Substance Use Disorder</td>
+    <td> Feb 2025 - Present</td>
+  </tr>
+  <tr>
+    <td>Idaho State University</td>
+    <td>Project Manager</td>
+    <td>HRSA Grant Electronic Handbook</td>
+    <td> Nov 2023 - Present</td>
+  </tr>
+  <tr>
+    <td>Cornerstone Whole Healthcare Org.</td>
+    <td>Project Manager</td>
+    <td>Write grant proposals, manage budgets, and research public health legislation</td>
+    <td>Aug 2022 - Sep 2023</td>
+  </tr>
+  <tr>
+    <td>Gateway to Recovery Detox Center</td>
+    <td>Professional Research Assistant & Patient Navigator</td>
+    <td>Coordinated with public, private and tribal treatment agencies in the state of Alaska to advocate for patient needs and promote timely care</td>
+    <td>Aug 2021 - March 2022</td>
+  </tr>
+   <tr>
+    <td>Lead King Loop Recreation Management Study</td>
+    <td>Project Manager</td>
+    <td>Develop preliminary research study to inform recreation management of fast growing motorized recreation area</td>
+    <td>Aug 2019 - Oct 2020</td>
+   </tr>
+</table>
+<!-- followed a tutorial to add a hyperlink back to homepage. th hyperlink references the index.html webpage creating a pathway to go back to it--> 
+ <!-- changed font size to make it smaller-->   
+
+</body>
+</html>
